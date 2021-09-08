@@ -3,7 +3,7 @@ kind: Job
 metadata:
   labels:
     app: jx-boot
-    jenkins-x.io/kind: jxx-test
+    jenkins-x.io/kind: jx-git-operator
 spec:
   backoffLimit: 4
   completions: 1
@@ -12,7 +12,7 @@ spec:
     metadata:
       labels:
         app: jx-boot
-        jenkins-x.io/kind: jxx-test
+        jenkins-x.io/kind: jx-git-operator
     spec:
       initContainers:
       - args:
